@@ -1,0 +1,35 @@
+1) a) Polimorfismo significa que algo pode ter várias formas, em programação é quando um método
+      de uma classe mãe tem retornos diferentes para as classes filhas.
+
+   b) A assinatura de um método é o nome do método e os parâmetros. Ex:
+
+      public Double calculaAreaQuadrado(Double lado){
+        return lado*lado;
+      }
+
+      e
+
+      public void mostraNome(){
+        System.out.println(this.nome);
+      }
+
+      A assinatura do método calculaAreaQuadrado é calculaAreaQuadrado(Double lado), somente o nome do método e seu parâmetro.
+      A assinaturo do método mostraNome é mostraNome(), somente seu nome com parênteses já que não tem parâmetros.
+
+   c) No polimorfismo estático os parâmetros são diferentes, para que as assinaturas sejam diferentes.
+      Já no polimorfismo dinâmico o método nas classes filhas tem a mesma assinatura que o método da classe mãe.
+
+   2) ver classe Forma
+
+   3) ver classes Circulo, Tiangulo, Quadrado e Retangulo
+
+   4) ver classes do exercício 3 e a classe Main
+
+   5) A classe que representa as peças de um jogo de xadrez em geral precisa dos seguintes atributos:
+      Um atributo protectedd do tipo String chamado nome, para saber qual é a peça;
+      Um atributo protected do tipo String chamado cor, para saber de qual jogador é a peça;
+      Um atributo protected do tipo boolean chamado capturada, para saber se a peça pode jogar ou já foi capturada;
+
+      Os comportamentos dessa classe são:
+      Mover, que recebe as coordenadas de onde está a peça, para onde ela vai, e analisa se o movimento é válido ou não;
+      Capturar, que é utilizado quando uma peça se move para a casa onde está uma peça de outra cor;
